@@ -53,6 +53,11 @@ body {
   border-radius: 100px;
 }
 
+.corpo {
+  display: flex;
+  flex-direction: row;
+}
+
 .projetos {
   display: flex;
   flex-direction: column;
@@ -61,10 +66,10 @@ body {
   background: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
   box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
   border-radius: 20px;
+  width: 75%;
 }
 
 .projetos-titulo {
-  list-style: none;
   font-weight: 700;
   font-size: 36px;
 }
@@ -81,19 +86,48 @@ body {
   text-decoration: none;
 }
 
-.contato {
+.conquistas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  padding: 32px;
+  background: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+  margin-left: 20px;
+  width: 25%; 
+  height: 100%; 
+}
+
+.conquistas-titulo {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.conquistas-item {
+  list-style-type: none;
+  line-height: 32px;
+}
+
+.conquistas-item img {
+  width: 118px;
+  height: 118px;
+}
+
+.redes-sociais {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 24px;
 }
 
-.contato h3 {
+.redes-sociais h3 {
   font-weight: 700;
   font-size: 24px;
 }
 
-.contato img {
+.redes-sociais img {
   max-width: 50px;
   max-height: 50px;
 }
@@ -115,4 +149,8 @@ body {
   background: #1c1c1c;
   color: #f7f7f7;
   border: 2px solid #f7f7f7;
+}
+
+.dark .conquistas {
+  color: #1c1c1c;
 }
